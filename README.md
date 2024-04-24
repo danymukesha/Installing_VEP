@@ -59,9 +59,10 @@ sudo cpan Bio::EnsEMBL::Registry
 sudo cpan Bio::EnsEMBL
 sudo cpan Module::Build
 sudo cpan LWP::Simple HTTP::Tiny
+sudo apt-get install libdbd-mysql-perl
 ```
 
 To make sure you installed all necessary modules to run properly ./vep
 ```sh
-cpanm --installdeps . 
+sudo cpanm --installdeps . 
 ```
