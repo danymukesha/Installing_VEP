@@ -60,3 +60,8 @@ sudo cpan Bio::EnsEMBL
 sudo cpan Module::Build
 sudo cpan LWP::Simple HTTP::Tiny
 ```
+
+To make sure you installed all necessary modules to run properly ./vep
+```sh
+cpanm --installdeps . 
+```
