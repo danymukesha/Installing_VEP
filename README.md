@@ -53,6 +53,7 @@ make install
 ```sh
 sudo cpan App::cpanminus1
 sudo cpan Archive::Zip
+sudi span Data::ShowTable
 sudo cpan DBD::mysql
 sudo cpan Bio::EnsEMBL::Registry
 sudo cpan Bio::EnsEMBL
