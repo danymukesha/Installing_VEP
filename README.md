@@ -18,9 +18,9 @@ Installation of Variant Effect Predictor(VEP)
    ```
 
 
+## Modules, plugins, and other tools
 
-
-necessary modules to be installed first"
+Here are the necessary modules, plugins, and other tools to be installed first
 
 ```sh
 wget https://www.cpan.org/modules/by-module/DBI/DBI-1.643.tar.gz
@@ -37,6 +37,32 @@ Generate the "Makefile":
 cd     DBI-1.15
 perl Makefile.PL
 ```
+
+- type _**y**_
+
+  ![image](https://github.com/danymukesha/Installing_VEP/assets/45208254/25c61078-291d-476c-8e68-2517d039c409)
+
+- Choose **472**
+
+  ![image](https://github.com/danymukesha/Installing_VEP/assets/45208254/60439450-19ab-4b35-adfe-05a0a30394b2)
+  - downloading https://ftp.ensembl.org/pub/release-111/variation/indexed_vep_cache/homo_sapiens_vep_111_GRCh38.tar.gz
+  - unpacking homo_sapiens_vep_111_GRCh38.tar.gz
+  - converting cache, this may take some time but will allow VEP to look up variants and frequency data much faster
+  - use CTRL-C to cancel if you do not wish to convert this cache now (you may run convert_cache.pl later)
+
+- type y
+
+  ![image](https://github.com/danymukesha/Installing_VEP/assets/45208254/8ebf8412-466b-4656-b73c-60e3fc033f09)
+
+FASTA files for the following species are available; which do you want (can specify multiple separated by spaces, "0" to install for species specified for cache download): 
+
+![image](https://github.com/danymukesha/Installing_VEP/assets/45208254/b41d0ca3-2807-4034-b111-9ce1ee12db6d)
+
+- type y
+
+  ![image](https://github.com/danymukesha/Installing_VEP/assets/45208254/4d6eb253-1ca4-4d60-bd0d-7da2fe8cd9b8)
+
+
 Make the installable files:
 ```sh
 make
