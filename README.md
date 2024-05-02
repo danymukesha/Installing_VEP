@@ -107,3 +107,11 @@ To make sure you installed all necessary modules to run properly ./vep
 ```sh
 sudo cpanm --installdeps . 
 ```
+
+in the case you are using the remote databaset of Ensembl, 
+You can test the connection to our database with the following MySQL command:
+
+mysql -h ensembldb.ensembl.org -u anonymous
+
+
+Save the case in which All Ensembl servers are not working. 
