@@ -63,6 +63,21 @@ FASTA files for the following species are available; which do you want (can spec
   ![image](https://github.com/danymukesha/Installing_VEP/assets/45208254/4d6eb253-1ca4-4d60-bd0d-7da2fe8cd9b8)
 
 
+
+If you want to install cache in a particular mode, following this guidelines:
+# Install cache for GRCh38, this needs to be a separate folder.
+```sh
+perl INSTALL.pl 
+   --NO_TEST 
+   --NO_HTSLIB 
+   --AUTO alcf 
+   --PLUGINS <NAME OF PLUGINS> 
+   --CACHEDIR /mnt/xxx/repository/general/annotation/VEP/GRCh38 
+   --PLUGINSDIR /mnt/xxx/repository/software/ensembl-vep/Plugins/GRCh38/ 
+   --CONVERT 
+   --SPECIES homo_sapiens_vep_104_GRCh38
+```
+
 Make the installable files:
 ```sh
 make
